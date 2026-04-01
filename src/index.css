@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+.theme-toggle-btn {
+  /* background: transparent; */
+   background: rgba(127, 127, 127, 0.12) !important;
+  border: 0;
+  color: inherit;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+}
+
+.theme-toggle-btn:hover,
+.theme-toggle-btn:focus,
+.theme-toggle-btn:active,
+.theme-toggle-btn.show {
+  background: rgba(127, 127, 127, 0.12) !important;
+  color: inherit !important;
+}
+
+.theme-toggle-btn::after {
+  margin-left: 0.2rem;
+}
+
+.theme-toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.theme-toggle-icon-auto {
+  font-size: 1.5rem;
 }
